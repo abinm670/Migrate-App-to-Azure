@@ -41,13 +41,13 @@ def main(msg: func.ServiceBusMessage):
         for x in attendees:
             message= Mail(
                 from_email="jeddah_nona_1980@hotmail.com",
-                to_emails='jeddah_nona_1980@hotmail.com',
+                to_emails=x[1],
                 subject='User{}:{}'.format(x[2], subject),
                 #logging.info(f"Okay '{subject}'")
                 plain_text_content=messageContent
                 )
             try:
-                req=SendGridAPIClient('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')
+                req=SendGridAPIClient('')
                 respond=req.send(message)
                 print(respond.body)
                 print(respond.status_code)

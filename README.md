@@ -62,11 +62,23 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
-| *Azure Postgres Database* |     |              |
-| *Azure Service Bus*   |         |              |
+| *Azure Postgres Database* |  Basic   |       $32.24       |
+| *Azure Service Bus*   |     Basic    |      0.5        |
 | ...                   |         |              |
 
 ## Architecture Explanation
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+
+Migrate:
+•	Web app to Azure App Service 
+•	PostgreSql database backup to Azure Postgres database instance
+
+Refactor Notification:
+Azure function through service bus queue.
+
+
+As a result, app will face slowness and high cost once the app receive high traffic. However, this app is not big as we have frontend and function can be scale up and down based on traffic.  
+
+
 
 

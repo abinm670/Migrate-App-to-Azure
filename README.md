@@ -77,7 +77,8 @@ Refactor Notification:
 Azure function through service bus queue.
 
 
-As a result, app will face slowness and high cost once the app receive high traffic. However, this app is not big as we have frontend and function can be scale up and down based on traffic.  
+As a result, app will face slowness and high cost once the app receive high traffic. However, this app is not big as we have frontend and function can be scale up and down based on traffic.The developers will focus on database structure rather than security or update patches, and avoid high cost
+  
 
 
 

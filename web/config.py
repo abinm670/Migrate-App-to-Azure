@@ -15,7 +15,7 @@ class BaseConfig:
     SERVICE_BUS_CONNECTION_STRING ='Endpoint=sb://techconf.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=BwcoSp8acVkYHMUpZ3QY2f+hO44rI3c6uKfDTeYD0QY=' #TODO: Update value
     SERVICE_BUS_QUEUE_NAME ='techconfque'
     ADMIN_EMAIL_ADDRESS:'jeddah_nona_1980@hotmail.com'
-    SENDGRID_API_KEY = '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' #Configuration not required, required SendGrid Account
+    SENDGRID_API_KEY = 'Local Env Only' #Configuration not required, required SendGrid Account
 
 class DevelopmentConfig(BaseConfig):
     DEBUG = True

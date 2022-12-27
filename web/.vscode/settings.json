@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/0e25fa64-2d67-4aaf-a089-67d671f205b7/AppServices/subscriptions/0e25fa64-2d67-4aaf-a089-67d671f205b7/resourceGroups/jeddah/providers/Microsoft.Web/sites/mru",
+    "appService.deploySubpath": "."
+}
